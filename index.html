@@ -1,6 +1,9 @@
 
 
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>關於作者自己</title>
-    <meta name="description" content="本人介紹"></meta>
+    <meta name="description" content="醫學資訊學系介紹"></meta>
     <link rel="stylesheet" href="./1.css"/>
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
     </script>
@@ -17,6 +20,21 @@
         $(document).ready(function(){
           $("#flip").click(function(){
             $("#panel").slideToggle("slow");
+          });
+        });
+        $(document).ready(function(){
+          $("#flip1").click(function(){
+            $("#panel1").slideToggle("slow");
+          });
+        });
+        $(document).ready(function(){
+          $("#flip2").click(function(){
+            $("#panel2").slideToggle("slow");
+          });
+        });
+        $(document).ready(function(){
+          $("#flip3").click(function(){
+            $("#panel3").slideToggle("slow");
           });
         });
         $(document).ready(function(){
@@ -28,6 +46,9 @@
 });
 
 
+
+
+
         
         </script>
          
@@ -36,12 +57,51 @@
         {
             padding:5px;
             text-align:center;
-            background-color:#e5eecc;
-            border:solid 1px #c3c3c3;
+            background-color:#de0de6;
+            border:solid 2px #e2df0c;
         }
         #panel
         {
             padding:50px;
+            display:none;
+        }
+
+        #panel1,#flip1
+        {
+            padding:5px;
+            text-align:center;
+            background-color:#1c9dbd;
+            border:solid 2px #b80d0d;
+        }
+        #panel1
+        {
+            padding:30px;
+            display:none;
+        }
+
+
+        #panel2,#flip2
+        {
+            padding:3px;
+            text-align:center;
+            background-color:#1cbd37;
+            border:solid 2px #ce0b0b;
+        }
+        #panel2
+        {
+            padding:30px;
+            display:none;
+        }
+        #panel3,#flip3
+        {
+            padding:3px;
+            text-align:center;
+            background-color:#e4058e;
+            border:solid 2px #62a9ca;
+        }
+        #panel3
+        {
+            padding:30px;
             display:none;
         }
     
@@ -72,8 +132,9 @@
                 <h2 style="color: darkblue;">自我介紹</h2>
                 
                 <hr>
-        
-            <p> 我的名字是陳翌萌，是一位大二學生，目前就讀輔仁大學的醫資學程。</p>
+                <div id="flip">點我自我介紹</div>
+                <div id="panel">我的名字是陳翌萌，是一位大二學生，目前就讀輔仁大學的醫資學程。</div>
+           
             <p>&nbsp</p>
             <table>
                 <tr><th colspan="2">喜好</th>
@@ -98,51 +159,58 @@
             </div>
         </section>
         <section class="right">
-            <h3 style="color: indigo;">我的程式設計經驗</h3>
-            <ul>
+            <h3 style="color: indigo;">程式設計經驗</h3>
+            <div id="flip1">點我程式設計經驗</div>
+                <div id="panel1"> <ul>
 							
-                <li>java</li>
-                
-                <li>HTML</li>
-                
-                <li>CSS</li>
-                
-                <li>kotlin</li>
-                
-            </ul>
+                    <li>java</li>
+                    
+                    <li>HTML</li>
+                    
+                    <li>CSS</li>
+                    
+                    <li>kotlin</li>
+                    
+                </ul></div>
+
+
+         
             <p>&nbsp</p>
             <h3 style="color: rgb(23, 214, 189);">未來的夢想</h3>
+            <div id="flip2">點我未來的夢想</div>
+            <div id="panel2"><p>成為一名工程師，定居在日本，其實我並不奢求要有很高質量的生活</p>
+                <p>只要豐衣足食即可。</p></div>
             
-            <p>成為一名工程師，定居在日本，其實我並不奢求要有很高質量的生活</p>
-            <p>只要豐衣足食即可。</p>
+            
             <p>&nbsp</p>
     
             <p>&nbsp</p>
             
             <h3 style="color: pink;">寵物</h3>
-            <div id="divcss5"><img src="dog.jpg.jpg" width="210" height="205"/></div>
-            <p>她叫波妞，是一隻臘腸狗，目前六歲，不知道為什麼皮膚永遠都好不了....</p>
+           
+            <div id="flip3">點我看寵物</div>
+           
+            <div id="panel3">  <div id="divcss5"><img src="dog.jpg.jpg" width="210" height="205"/></div><p>她叫波妞，是一隻臘腸狗，目前六歲，不知道為什麼皮膚永遠都好不了...</p></div>
+            
+          
 
            
 
         </section>
         <section class="right2">
-        <h3 style="color:saddlebrown;">我的高中</h3>
-            <img src="clhs.jpg" width="200" height="200"><br>
-
-            <a href="https://www.clsh.ntpc.edu.tw/ischool/publish_page/0/" target="_blank">竹林高中</a>
-            <p>這裡擁有過我最美好的回憶 </p>
-            <br><br>
-            <br><br>
-            <div id="flip">點我啦</div>
-            <div id="panel">從網路上學到的 厲害吧</div>
+        
+           
             <button>點擊查看我的三項優點</button>
-<br><br>
+
+            
+
+    <br><br>
+    
 <div id="div1" style="width:80px;height:80px;display:none;background-color:rgb(0, 255, 128);"><p style="font-size:xx-large;">帥</p></div><br>
 <div id="div2" style="width:80px;height:80px;display:none;background-color:rgb(128, 0, 60);"><p style="font-size:xx-large;">超帥</p></div><br>
 <div id="div3" style="width:80px;height:80px;display:none;background-color:rgba(86, 42, 190, 0.788);"><p style="font-size:xx-large;">超級帥</p></div>
 
-          
+           
             </section>
            
             </main>
